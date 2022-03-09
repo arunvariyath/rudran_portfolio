@@ -1,10 +1,10 @@
 (function () {
     "use strict";
-    generateContent();
+    generateGalleryContent();
 
 })();
 
-function generateContent () {
+function generateGalleryContent () {
 
     let galleryImages = [{
         imageSrc: 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp',
@@ -35,12 +35,6 @@ function generateContent () {
         rowDiv.append(modalDiv);
 
     });
-
-
-
-
-
-
     // you haven't touched the DOM yet, everything thus far has been in memory
     $("#toReplace").html(rowDiv); // this is the only time you touch the DOM
 }
